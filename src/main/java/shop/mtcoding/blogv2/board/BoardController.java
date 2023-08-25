@@ -15,4 +15,9 @@ public class BoardController {
     public String detail() {
         return "board/detail";
     }
+
+    @GetMapping("/board/2")
+    public String detail2() {
+        return "board/detail";
+    }
 }
