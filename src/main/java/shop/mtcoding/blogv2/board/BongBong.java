@@ -4,5 +4,6 @@ public class BongBong {
 
     private String bong;
     private String bong2;
+    private String bong3;
 
 }
