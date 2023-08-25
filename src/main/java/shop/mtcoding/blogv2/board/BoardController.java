@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class BoardController {
 
+    @GetMapping("/board/saveForm")
+    public String save() {
+        return "board/saveForm";
+    }
+
     @GetMapping("/board/1")
     public String detail() {
         return "board/detail";
