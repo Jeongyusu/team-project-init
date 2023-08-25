@@ -10,11 +10,8 @@ public class UserController {
         return "redirect:/";
     }
 
-
     @GetMapping("/updateForm")
     public String update() {
         return "updateForm";
     }
-
-
 }
