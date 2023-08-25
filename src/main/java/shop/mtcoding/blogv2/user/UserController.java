@@ -16,6 +16,7 @@ public class UserController {
         return "updateForm";
     }
 
+
     @PostMapping("/join")
     public String join() {
         return "join";
