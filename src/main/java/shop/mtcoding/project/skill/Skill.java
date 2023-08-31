@@ -2,6 +2,7 @@ package shop.mtcoding.project.skill;
 
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -25,6 +26,9 @@ public class Skill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    @Column(length = 20)
+    private String skill;
 
     @OneToMany(mappedBy = "skill", fetch = FetchType.LAZY)
     private List<RequiredSkill> requiredSkillList;

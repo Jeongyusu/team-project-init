@@ -42,7 +42,7 @@ public class User {
     private String compEmailId;
 
     @Column(length = 20)
-    private String username;
+    private String userName;
 
     @Column(length = 80)
     private String userPassword;
@@ -79,14 +79,14 @@ public class User {
     private List<Suggest> suggestList = new ArrayList<>();
 
     @Builder
-    public User(Integer id, String userEmailId, String compEmailId, String username, String userPassword,
+    public User(Integer id, String userEmailId, String compEmailId, String userName, String userPassword,
             String userPicUrl, String compPicUrl, String compName, String compHistory, String compIntro,
             Timestamp createdAt, List<Resume> resumeList, List<JobOpening> jobOpeningList,
             List<UserScrap> userScrapList, List<CompScrap> compScrapList, List<Suggest> suggestList) {
         this.id = id;
         this.userEmailId = userEmailId;
         this.compEmailId = compEmailId;
-        this.username = username;
+        this.userName = userName;
         this.userPassword = userPassword;
         this.userPicUrl = userPicUrl;
         this.compPicUrl = compPicUrl;

@@ -2,6 +2,7 @@ package shop.mtcoding.project.scrap;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,6 +23,7 @@ import shop.mtcoding.project.user.User;
 @Getter
 @Setter
 @Table(name = "comp_scrap_tb")
+@Entity
 public class CompScrap {
 
     @Id
@@ -29,7 +31,7 @@ public class CompScrap {
     private Integer id;
 
     @CreationTimestamp
-    private Timestamp timestamp;
+    private Timestamp createdAt;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
@@ -40,7 +42,7 @@ public class CompScrap {
     @Builder
     public CompScrap(Integer id, Timestamp timestamp, User user, Resume resume) {
         this.id = id;
-        this.timestamp = timestamp;
+        this.createdAt = timestamp;
         this.user = user;
         this.resume = resume;
     }

@@ -31,7 +31,7 @@ public class UserScrap {
     private Integer id;
 
     @CreationTimestamp
-    private Timestamp timestamp;
+    private Timestamp createdAt;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
@@ -40,9 +40,9 @@ public class UserScrap {
     private JobOpening jobOpening;
 
     @Builder
-   public UserScrap(Integer id, Timestamp timestamp, User user, JobOpening jobOpening) {
+    public UserScrap(Integer id, Timestamp createdAt, User user, JobOpening jobOpening) {
         this.id = id;
-        this.timestamp = timestamp;
+        this.createdAt = createdAt;
         this.user = user;
         this.jobOpening = jobOpening;
     }

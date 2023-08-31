@@ -41,12 +41,6 @@ public class JobOpening {
     private String title;
 
     @Column(nullable = false)
-    private String task;
-
-    @Column(nullable = false)
-    private String qualified;
-
-    @Column(nullable = false)
     private String process;
 
     @Column(nullable = false)
@@ -87,14 +81,12 @@ public class JobOpening {
     private List<Qualified> qualifiedList;
 
     @Builder
-    public JobOpening(Integer id, String title, String task, String qualified, String process, String career,
-            String careerYear, String edu, String compAddress, Timestamp deadLine, Timestamp createdAt, User user,
+    public JobOpening(Integer id, String title, String process, String career, String careerYear, String edu,
+            String compAddress, Timestamp deadLine, Timestamp createdAt, User user,
             List<RequiredSkill> requiredSkillList, List<Apply> applyList, List<UserScrap> userScrapList,
             List<Task> taskList, List<Qualified> qualifiedList) {
         this.id = id;
         this.title = title;
-        this.task = task;
-        this.qualified = qualified;
         this.process = process;
         this.career = career;
         this.careerYear = careerYear;
