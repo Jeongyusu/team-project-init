@@ -1,5 +1,7 @@
 package shop.mtcoding.project.suggest;
 
-public class SuggestRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SuggestRepository extends JpaRepository<Suggest, Integer> {
 
 }

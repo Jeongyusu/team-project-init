@@ -35,23 +35,23 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false, length = 40, unique = true)
+    @Column(length = 40, unique = true)
     private String userEmailId;
 
-    @Column(nullable = false, length = 60, unique = true)
+    @Column(length = 60, unique = true)
     private String compEmailId;
 
-    @Column(nullable = false, length = 20)
+    @Column(length = 20)
     private String username;
 
-    @Column(nullable = false, length = 80)
+    @Column(length = 80)
     private String userPassword;
 
     private String userPicUrl;
 
     private String compPicUrl;
 
-    @Column(nullable = false, length = 30)
+    @Column(length = 30)
     private String compName;
 
     @Column(length = 100)

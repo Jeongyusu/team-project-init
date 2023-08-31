@@ -1,5 +1,5 @@
 package shop.mtcoding.project.skill;
 
-public class SkillRepository {
+public class SkillResponse {
 
 }

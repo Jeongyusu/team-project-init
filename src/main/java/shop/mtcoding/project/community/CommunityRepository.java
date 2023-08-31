@@ -1,5 +1,7 @@
 package shop.mtcoding.project.community;
 
-public class CommunityRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CommunityRepository extends JpaRepository<Community, Integer> {
 
 }
